@@ -8,13 +8,13 @@
 </script>
 
 <SchemaButton />
-<Screen schema ="primary">
-	<Intro />/
+<Screen schema = "primary">
+	<Intro />
 </Screen>
 <Screen>
 	<About />
 </Screen>
-<Screen schema ="primary">
+<Screen schema = "primary">
 	<Projects />
 </Screen>
 <Screen>

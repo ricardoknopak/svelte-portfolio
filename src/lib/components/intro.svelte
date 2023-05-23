@@ -1,6 +1,4 @@
 <script>
-// @ts-nocheck
-
 	import { onDestroy } from 'svelte';
     import { profile } from '../store/store.js';
     
@@ -13,7 +11,6 @@
 	})
 	onDestroy(unsubscribe)
 </script>
-
 
 <section id="intro" class="flex flex-col items-center">
     <div class="mx-auto mb-8 ">

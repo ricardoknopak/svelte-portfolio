@@ -8,52 +8,38 @@
         {
             "theme": "yellow",
             "startColorRgb": "#FFF",
-            "endColorRgb": "#FACC14",
-            "startColorTailwind": "yellow-400",
-            "endColorTailwind": "white"
+            "endColorRgb": "#FACC14"
         },
         {
             "theme": "orange",
             "startColorRgb": "#FFF",
-            "endColorRgb": "#F97316",
-            "startColorTailwind": "orange-500",
-            "endColorTailwind": "white-500"
+            "endColorRgb": "#F97316"
         },
         {
             "theme": "pink",
             "startColorRgb": "#FFF",
-            "endColorRgb": "#bc13fe",
-            "startColorTailwind": "pink-500",
-            "endColorTailwind": "white-500"
+            "endColorRgb": "#bc13fe"
         },
         {
             "theme": "rose",
             "startColorRgb": "#FFF",
-            "endColorRgb": "#F43F5E",
-            "startColorTailwind": "rose-500",
-            "endColorTailwind": "white-500"
+            "endColorRgb": "#F43F5E"
         },
         {
             "theme": "blue",
             "startColorRgb": "#FFF",
-            "endColorRgb": "#3B82F6",
-            "startColorTailwind": "blue-500",
-            "endColorTailwind": "white-500"
+            "endColorRgb": "#3B82F6"
         },
         {
             "theme":"emerald",
             "startColorRgb": '#fff',
-            "endColorRgb": '#10B981',
-            "startColorTailwind": 'emerald-500',
-            "endColorTailwind": 'white-500'
+            "endColorRgb": '#10B981'
         },
     ]
 
-    let startColorTailwind, endColorTailwind, startColorRgb, endColorRgb 
+    let startColorRgb, endColorRgb
     
     const unsubscribe = profile.subscribe(value => {
-        startColorTailwind = value.startColorTailwind
-        endColorTailwind = value.endColorTailwind
         startColorRgb = value.startColorRgb
         endColorRgb = value.endColorRgb
 	})
@@ -61,14 +47,11 @@
     function switchTheme ( newColor ) {
         themes.forEach(tema => {
             if (tema.theme == newColor) {
-                $profile.startColorTailwind = tema.startColorTailwind
-                $profile.endColorTailwind = tema.endColorTailwind
                 $profile.startColorRgb = tema.startColorRgb
                 $profile.endColorRgb = tema.endColorRgb
             }
         });
     }
-
 	onDestroy(unsubscribe)
 </script>
 
