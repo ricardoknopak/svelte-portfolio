@@ -35,6 +35,11 @@
             "startColorRgb": '#fff',
             "endColorRgb": '#10B981'
         },
+        {
+            "theme": "off",
+            "startColorRgb": "#fff",
+            "endColorRgb": "#000000"
+        }
     ]
 
     let startColorRgb, endColorRgb
@@ -77,5 +82,8 @@
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="w-6 h-6 mx-3 my-1 border-2 rounded-full bg-emerald-500 border-slate-500" on:click={ () => switchTheme("emerald") }>
         <!-- #10B981 -->
+    </div>
+    <div class="w-6 h-6 mx-3 my-1 border-2 rounded-full bg-gray-500 border-slate-500" on:click={ () => switchTheme("off") }>
+        <!-- #5C5552 -->
     </div>
 </div>
