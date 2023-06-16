@@ -4,19 +4,19 @@
 
 <section id="about" class="w-6/12">
     <p class="text-lg leading-8 text-justify">
-        <strong class="paragraph" style:color={ $profile.endColorRgb } >P</strong>
-        <strong class="textColor" style:background={ $profile.endColorRgb } >rogramador de computadores,</strong>
+        <strong class="paragraph" style:color={ $profile.neonGlow } >P</strong>
+        <strong class="textColor" style:background={ $profile.neonGlow } >rogramador de computadores,</strong>
         de sistemas, developer, não importa, se tiver 
-        <strong class="textColor" style:background={ $profile.endColorRgb }>código eu gosto.</strong> Gosto muito de 
+        <strong class="textColor" style:background={ $profile.neonGlow }>código eu gosto.</strong> Gosto muito de 
         interagir com pessoas, 
-        <strong class="textColor" style:background={ $profile.endColorRgb }>trabalhar junto, barulho de gente,</strong>
+        <strong class="textColor" style:background={ $profile.neonGlow }>trabalhar junto, barulho de gente,</strong>
         mas se tiver programação... 
-        <strong class="textColor" style:background={ $profile.endColorRgb }>com programação brilha!</strong><br/>
+        <strong class="textColor" style:background={ $profile.neonGlow }>com programação brilha!</strong><br/>
         Para ter uma idéia, gosto tanto de pessoas e de programação, claro, que 
-        <strong class="textColor" style:background={ $profile.endColorRgb }>minha profissão é resolver problemas de gente com código e computador,</strong> veja só!<br/>
+        <strong class="textColor" style:background={ $profile.neonGlow }>minha profissão é resolver problemas de gente com código e computador,</strong> veja só!<br/>
         Sou organizado, analítico e nada, nada, me tira a concentração quando estou programando. Mas quando não estou, ah, daí a
         coisa muda, melhor nem comentar, 
-        <strong class="textColor" style:background={ $profile.endColorRgb }>mas chego no horário e quase sempre lembro de levar tudo que preciso. Ou não lembro de
+        <strong class="textColor" style:background={ $profile.neonGlow }>mas chego no horário e quase sempre lembro de levar tudo que preciso. Ou não lembro de
         que precisava algo que esqueci.</strong><br/>
         <em>Mas acaba sendo assim com todo mundo, não é?!</em>
     </p>

@@ -2,48 +2,40 @@ import { writable } from 'svelte/store';
 
 const themes = [
     {
-        "theme": "yellow",
-        "startColorRgb": "#FFF",
-        "endColorRgb": "#FACC14"
-    },
-    {
-        "theme": "orange",
-        "startColorRgb": "#FFF",
-        "endColorRgb": "#F97316"
-    },
-    {
+        "theme": "red",
+        "black": "#000000",
+        "white": "#FFFFFF",
+        "neon": "#FF5161",
+        "neonGlow": "#D30302"
+    },{
         "theme": "pink",
-        "startColorRgb": "#FFF",
-        "endColorRgb": "#bc13fe"
-    },
-    {
-        "theme": "rose",
-        "startColorRgb": "#FFF",
-        "endColorRgb": "#F43F5E"
-    },
-    {
+        "neon": "#FF53cd",
+        "neonGlow": "#e10361"
+    },{
+        "theme": "purple",
+        "neon": "#9461fd",
+        "neonGlow": "#4003e6"
+    },{
         "theme": "blue",
-        "startColorRgb": "#FFF",
-        "endColorRgb": "#3B82F6"
-    },
-    {
-        "theme":"emerald",
-        "startColorRgb": '#fff',
-        "endColorRgb": '#10B981'
-    },
-    {
-        "theme": "off",
-        "startColorRgb": "#fff",
-        "endColorRgb": "#000000"
+        "neon": "#2dd9fe",
+        "neonGlow": "#00a3d5"
+    },{
+        "theme": "green",
+        "neon": "#00fe9b",
+        "neonGlow": "#02c435"
+    },{
+        "theme": "yellow",
+        "neon": "#ffdb4e",
+        "neonGlow": "#b48505"
+    },{
+        "theme": "white",
+        "neon": "#fefefe",
+        "neonGlow": "#ffffff"
     }
 ]
+export const Themes = writable(themes)
+export const profile = writable( themes[0]);
 
-export const profile = writable({
-    "black": "#000000",
-    "white": "#FFFFFF",
-    "startColorRgb": "#FFF",
-    "endColorRgb": "#3B82F6"
-});
 export const changeTheme = ( selectedTheme ) => {
     themes.forEach(theme => {
         if (theme.theme == selectedTheme) {
@@ -60,3 +52,33 @@ export const setPassword = ( code ) => {
         password.update(n => n + String (code) )
     }
 }
+export const projetos = writable([
+    {
+        'order': 1,
+        'name':'SveltePortfolio',
+        'description': 'Home page / portifolio',
+        'link': 'ricardok.com.br',
+        'github': 'github.com/ricardoknopak/svelte-portfolio',
+        'stack': [
+            'sveltekit', 'supabase'
+        ]
+    },{
+        'order': 2,
+        'name': 'LinkShortner',
+        'description': 'Encurtado de url com analytics',
+        'link': 'linkshortner.ricardok.com.br',
+        'github': 'github.com/ricardoknopak/link-shortner',
+        'stack': [
+            'deno', 'deno kv'
+        ]
+    },{
+        'order': 3,
+        'name': 'BookMa(r)ker',
+        'description': 'Bookmarker mananger',
+        'link': 'bookmarker.ricardok.com.br',
+        'github': 'github.com/ricardoknopak/bookmarker',
+        'stack': [
+            'indefinida até o momento'
+        ]
+    }
+])
