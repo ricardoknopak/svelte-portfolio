@@ -14,9 +14,3 @@
 <Screen>
 	<About />
 </Screen>
-<Screen schema = "black">
-	<Projects />
-</Screen>
-<Screen schema = "white">
-	<Contact />
-</Screen>
